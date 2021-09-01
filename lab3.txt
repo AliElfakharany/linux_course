@@ -1,0 +1,61 @@
+1.	sudo useradd islam -c "Islam Askar"
+	sudo passwd islam 
+	
+2.	sudo useradd badguy -c "bad boy"
+	sudo passwd badguy
+	
+3.	sudo groupadd pgroup -g 30000
+
+4.	sudo groupadd badgroup
+
+5.	sudo usermod -a -G pgroup islam
+
+6.	sudo passwd islam
+
+7.	sudo chage -M 30 islam
+
+8.	sudo chage -E 0 baduser
+
+9.	sudo userdel baduser
+
+10.	sudo groupdel badgroup
+
+13.	mkdir myteam
+	chmod 475 myteam
+
+14.	sudo su islam
+
+15.	cd myteam
+
+16.	touch oldpasswd
+	sudo chmod 631  oldpasswd
+	file maximum permission : rw-rw-r--
+	folder maximum permision :	drwxrwxr
+	umask 777
+	
+	
+17.	source directory :rx, target parent directory: wx
+	source file directory:r , target parent directory: wx 
+	delete a file : r
+	Change to a directory : x
+	List a directory content (ls command) : rx
+	View a file content (more/cat command) : r
+	Modify a file content : w
+	
+
+18.	warning : remove write-protected regular empty file
+
+19. file : execute the file 
+	directory : go inside directory or copy it to another one 
+	
+	
+20.	sleep 1000 &
+	
+	
+21. pkill -9 sleep  : it will kill all sleep processes 
+
+22.	pgrep -u ali
+
+23.	pgrep -v -u ali
+
+24.	pgrep -u ali
